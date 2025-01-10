@@ -15,10 +15,9 @@ class StudentController extends Controller
 
         $students = StudentResource::collection(Student::all());
 
-        // return inertia('Students/Index');
-        return Inertia::render('Students/Index', [
-            // Other data...
-            'component' => 'Students/Index'
-        ]);
+        return inertia('Students/Index');
+        // return Inertia::render('Students/Index', [
+        //     'component' => 'Students/Index'
+        // ]);
     }
 }
